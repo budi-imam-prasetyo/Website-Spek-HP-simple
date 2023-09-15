@@ -1,0 +1,309 @@
+body {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: block;
+}
+
+/** navbar home */
+nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+.ponsel {
+  margin-right: 20px;
+  font-size: 30px;
+  color: black;
+}
+.button-search {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 12px;
+}
+.left {
+  padding-left: 30px;
+}
+.left .a-nav {
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 20px;
+  background-color: transparent;
+  border: 0;
+  font-weight: bold;
+}
+.a-nav:hover{
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  padding:0 10px;
+}
+.left .a-nav:link {
+  text-decoration: none;
+  color: #000;
+  margin-right: 20px;
+}
+.left .a-nav:visited {
+  text-decoration: none;
+  color: #000;
+  margin-right: 20px;
+}
+.right input[type="text"] {
+  padding: 5px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+.right {
+  padding-right: 30px;
+}
+/** navbar home */
+
+/** body */
+td {
+  width: 50%;
+}
+#quotes {
+  padding-left: 60px;
+  padding-top: 40px;
+  font-size: 70px;
+  max-width: 100%;
+  text-align: left;
+  vertical-align: top;
+}
+#hp {
+  text-align: center;
+}
+#hp-img {
+  width: 80%;
+}
+.a-body{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 24px;
+  padding: 10px 20px;
+}
+.a-body:hover{
+  background-color: rgb(148, 0, 255);
+  color: white;
+}
+/** body */
+
+/** search home */
+.search-home{
+  text-align: center;
+  margin: 20px 0;
+}
+.search-home-search{
+  padding: 15px 500px 15px 10px;
+  border-radius: 10px;
+}
+.search-home-search:hover{
+  transform: scale(1.05);
+  border: 2px solid black;
+  font-size: 14px;
+}
+.search-home-button{
+  padding:15px 20px;
+  border-radius: 10px;
+  background-color: #000;
+  color: white;
+}
+/** search home */
+
+/** search filter */
+.div-search-filter{
+  float: left;
+  width: 10%;
+  height:100vh;
+  font-size: 18px;
+  border-right: 2px solid black;
+}
+.b-search-filter{
+  padding-left: 30px;
+}
+.search-filter-list active{
+  padding-left:45px;
+  text-decoration: none;
+  color: #000;
+  background-color: transparent;
+  border: 0;
+}
+.btn{
+  padding-left:45px;
+  text-decoration: none;
+  color: #000;
+  background-color: transparent;
+  border: 0;
+}
+.btn:hover{
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(148, 0, 255);
+}
+/** search filter */
+
+/** list produk */
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  overflow: hidden;
+}
+
+.filterDiv {
+  width: 300px; 
+  margin-right: 1%; 
+  margin-left: 1%; 
+  display: none;
+  margin-top: 20px;
+}
+.filterDiv:hover {
+  background-color: #ffffff;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 296px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    width: 100%; 
+  }
+  .filterDiv {
+    display: none;
+    width: 100%; 
+    margin-right: 0; 
+  }
+}
+
+@media screen and (max-width: 1350px){
+  .div-search-filter{
+    display: none;
+  }
+}
+
+a{
+  text-decoration: none;
+  text-align: center;
+}
+.show {
+  display: block;
+}
+/** list produk */
+
+/* Styling dasar untuk footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 5px;
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.section {
+    background: #ffffff;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.section h3 {
+    margin-top: 0;
+}
+
+
+.container-select {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.select {
+  font-size: 15px;
+  margin-right: 40px;
+  background: none;
+  border: none;
+  /* border-bottom: 2px solid #000; */
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.nama-hp {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-bottom: 10px;
+  flex: 1;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopee {
+  width: 50px;
+}
+
+.table {
+  font-size: 2vh;
+}
+
+
+.handphone2 {
+  background-color: white;
+  border-radius: 24px;
+  width: 95.3%;
+  font-size: 1vw;
+  aspect-ratio: 1/1;
+  margin: 1%;
+  text-align: left;
+  padding: 20px;
+}
+
+td {
+  padding-bottom: 10px;
+}
+
+.hp-rog {
+  width: 80%;
+}
+.hp-samsung {
+  width: 89.8%;
+}
+
+.picture {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  max-width: 100%;
+  text-align: center;
+}

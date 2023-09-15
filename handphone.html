@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+    }
+  </style>
+  <title>📲Project Website</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="rho.png" type="image/x-icon">
+</head>
+
+<body>
+  <!--* navbar-->
+  <nav>
+    <div class="left">
+      <b class="ponsel">PONSEL.ID</b>
+      <button class="a-nav" onclick="window.location.href='index.html'">Home</button>
+      <button class="a-nav">Chipset</button>
+      <button class="a-nav" onclick="window.location.href='about.html'">About</button>
+    </div>
+    <div class="right">
+      <!--todo:menggunakan div agar search dan button menyatu -->
+      <!-- <input type="text" placeholder="Search..." /> -->
+      <!-- <button class="button-search">cari</button> -->
+    </div>
+  </nav>
+  <!--* navbar-->
+
+  <div class="search-home">
+    <input type="text" placeholder="Masukan Pencarian" class="search-home-search" id="myInput">
+  </div>
+
+  <div class="div-search-filter">
+    <b class="b-search-filter">Search Filter</b>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">All</button>
+      <button class="btn" onclick="filterSelection('samsung')">Samsung</button>
+      <button class="btn" onclick="filterSelection('iphone')">Iphone</button>
+      <button class="btn" onclick="filterSelection('xiaomi')">Xiaomi</button>
+      <button class="btn" onclick="filterSelection('asus')">Asus</button>
+      <button class="btn" onclick="filterSelection('oppo')">Oppo</button>
+      <button class="btn" onclick="filterSelection('vivo')">Vivo</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="filterDiv asus">
+      <a href="/handphone/rog.html">
+        <div class="handphone">
+          <img class="hp-rog" src="/handphone/rog.png">
+          <div class="title">
+            <h2 class="nama-hp">ROG Phone 7 Ultimate</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="filterDiv samsung">
+      <a href="/handphone/samsung.html">
+        <div class="handphone">
+          <img class="hp-samsung" src="/handphone/samsung.png">
+          <div class="title">
+            <h2 class="nama-hp">Samsung S23 Ultra</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="filterDiv iphone">
+      <a href="/handphone/iphone.html">
+        <div class="handphone">
+          <img class="hp-rog" src="/handphone/iphone.png">
+          <div class="title">
+            <h2 class="nama-hp">Iphone 14 Pro Max</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="filterDiv xiaomi">
+      <a href="/handphone/xiaomi.html">
+        <div class="handphone">
+          <img class="hp-rog" src="/handphone/xiaomi.png">
+          <div class="title">
+            <h2 class="nama-hp">Xiaomi 13 Ultra</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="filterDiv vivo">
+      <a href="/handphone/vivo.html">
+        <div class="handphone">
+          <img class="hp-rog" src="/handphone/vivo.png">
+          <div class="title">
+            <h2 class="nama-hp">Vivo X90 Pro+</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="filterDiv oppo">
+      <a href="/handphone/oppo.html">
+        <div class="handphone">
+          <img class="hp-rog" src="/handphone/oppo.png">
+          <div class="title">
+            <h2 class="nama-hp">Oppo Find X6 Pro</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="filterDiv iphone">
+      <a href="/handphone/iphone2.html">
+        <div class="handphone">
+          <img class="hp-rog" src="/handphone/iphone2.png">
+          <div class="title">
+            <h2 class="nama-hp">Iphone 13 Pro Max</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="filterDiv samsung">
+      <a href="/handphone/samsungZ.html">
+        <div class="handphone">
+          <img class="hp-samsung" src="/handphone/samsungZ.png" style="width: 243px;">
+          <div class="title">
+            <h2 class="nama-hp">Samsung Galaxy Z Fold5 5G</h2>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
