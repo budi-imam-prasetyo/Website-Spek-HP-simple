@@ -15,40 +15,36 @@
 </head>
 
 <body>
-  <!--* navbar-->
-  <nav>
-    <div class="left">
-      <b class="ponsel">PONSEL.ID</b>
-      <button class="a-nav" onclick="window.location.href='index.html'">Home</button>
+  <nav class="site-container">
+    <div class="nav-left">
+      <div class="brand">PONSEL.ID</div>
+      <button class="a-nav" onclick="location.href='index.html'">Beranda</button>
       <button class="a-nav">Chipset</button>
-      <button class="a-nav" onclick="window.location.href='about.html'">About</button>
+      <button class="a-nav" onclick="location.href='about.html'">Tentang</button>
     </div>
     <div class="right">
-      <!--todo:menggunakan div agar search dan button menyatu -->
-      <!-- <input type="text" placeholder="Search..." /> -->
-      <!-- <button class="button-search">cari</button> -->
+      <input class="search-input" id="myInput" placeholder="Cari merek atau model...">
+      <button class="btn" onclick="document.getElementById('myInput').focus()">Cari</button>
     </div>
   </nav>
-  <!--* navbar-->
 
-  <div class="search-home">
-    <input type="text" placeholder="Masukan Pencarian" class="search-home-search" id="myInput">
-  </div>
+  <main class="site-container">
+    <div style="display:flex;gap:18px">
+      <aside class="div-search-filter" style="width:220px">
+        <strong class="b-search-filter">Filter</strong>
+        <div id="myBtnContainer" style="margin-top:12px;display:flex;flex-direction:column;gap:8px">
+          <button class="btn secondary active" onclick="filterSelection('all')">Semua</button>
+          <button class="btn secondary" onclick="filterSelection('samsung')">Samsung</button>
+          <button class="btn secondary" onclick="filterSelection('iphone')">iPhone</button>
+          <button class="btn secondary" onclick="filterSelection('xiaomi')">Xiaomi</button>
+          <button class="btn secondary" onclick="filterSelection('asus')">Asus / ROG</button>
+          <button class="btn secondary" onclick="filterSelection('oppo')">Oppo</button>
+          <button class="btn secondary" onclick="filterSelection('vivo')">Vivo</button>
+        </div>
+      </aside>
 
-  <div class="div-search-filter">
-    <b class="b-search-filter">Search Filter</b>
-    <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')">All</button>
-      <button class="btn" onclick="filterSelection('samsung')">Samsung</button>
-      <button class="btn" onclick="filterSelection('iphone')">Iphone</button>
-      <button class="btn" onclick="filterSelection('xiaomi')">Xiaomi</button>
-      <button class="btn" onclick="filterSelection('asus')">Asus</button>
-      <button class="btn" onclick="filterSelection('oppo')">Oppo</button>
-      <button class="btn" onclick="filterSelection('vivo')">Vivo</button>
-    </div>
-  </div>
-
-  <div class="container">
+      <section style="flex:1">
+        <div class="container">
     <div class="filterDiv asus">
       <a href="./handphone/rog.html">
         <div class="handphone">
@@ -130,6 +126,14 @@
       </a>
     </div>
   </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="site-container center muted">&copy; PONSEL.ID — Data referensi. Periksa toko resmi untuk harga dan ketersediaan.</div>
+  </footer>
 
   <script src="main.js"></script>
 </body>

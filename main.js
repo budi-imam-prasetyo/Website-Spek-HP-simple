@@ -1,5 +1,8 @@
 //* kode filter
-filterSelection("all")
+// initialize filters only if container exists (guard for detail pages)
+if (document.getElementById("myBtnContainer")){
+  filterSelection("all")
+}
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -32,13 +35,15 @@ function w3RemoveClass(element, name) {
 }
 
 var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+if (btnContainer){
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      if (current[0]) current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
 }
 //* kode filter
 
@@ -61,5 +66,7 @@ function filterItems() {
     }
   }
 }
-document.getElementById("myInput").addEventListener("keyup", filterItems);
+if (document.getElementById("myInput")){
+  document.getElementById("myInput").addEventListener("keyup", filterItems);
+}
 //* kode search

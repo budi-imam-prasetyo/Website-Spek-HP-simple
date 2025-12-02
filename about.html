@@ -1,31 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8">
-<meta name="author" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title></title>
-<link rel="stylesheet" href="/style.css">
-<link rel="icon" href="rho.png" type="image/x-icon">
-<script src=".js"></script>
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tentang — PONSEL.ID</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="rho.png" type="image/x-icon">
 </head>
-
 <body>
-  <!--* navbar-->
-  <nav>
-    <div class="left">
-      <b class="ponsel">PONSEL.ID</b>
-      <button class="a-nav" onclick="window.location.href='/index.html'">Home</button>
-      <button class="a-nav" onclick="window.location.href='/handphone.html'">Handphone</button>
+  <nav class="site-container">
+    <div class="nav-left">
+      <div class="brand">PONSEL.ID</div>
+      <button class="a-nav" onclick="location.href='index.html'">Beranda</button>
+      <button class="a-nav" onclick="location.href='handphone.html'">Handphone</button>
       <button class="a-nav">Chipset</button>
     </div>
     <div class="right">
-      <!--todo:menggunakan div agar search dan button menyatu -->
-      <!-- <input type="text" placeholder="Search..." />
-      <button class="button-search">cari</button> -->
+      <input class="search-input" placeholder="Cari...">
+      <button class="btn">Cari</button>
     </div>
   </nav>
-  <!--* navbar-->
+
+  <main class="site-container">
+    <h1>Tentang PONSEL.ID</h1>
+    <p class="muted">PONSEL.ID adalah sumber ringkas spesifikasi smartphone populer. Kami mengumpulkan informasi dasar untuk membantu Anda membandingkan ponsel dan menemukan pilihan terbaik.</p>
+    <section style="margin-top:16px">
+      <h3>Apa yang kami sediakan</h3>
+      <ul>
+        <li>Spesifikasi teknis (layar, kamera, baterai, chipset).</li>
+        <li>Link ke toko populer untuk referensi harga.</li>
+        <li>Deskripsi singkat dan detail kompatibilitas.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="site-container">&copy; 2025 PONSEL.ID — Data hanya untuk referensi.</div>
+  </footer>
 
 </body>
-
 </html>

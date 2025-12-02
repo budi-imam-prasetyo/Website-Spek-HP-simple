@@ -1,31 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8">
-<meta name="author" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title></title>
-<link rel="stylesheet" href="/style.css">
-<link rel="icon" href="rho.png" type="image/x-icon">
-<script src=".js"></script>
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vivo X90 Pro+ — PONSEL.ID</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../rho.png" type="image/x-icon">
 </head>
-
 <body>
-  <!--* navbar-->
-  <nav>
-    <div class="left">
-      <b class="ponsel">PONSEL.ID</b>
-      <button class="a-nav" onclick="window.location.href='/index.html'">Home</button>
-      <button class="a-nav" onclick="window.location.href='/handphone.html'">Handphone</button>
+  <nav class="site-container">
+    <div class="nav-left">
+      <div class="brand">PONSEL.ID</div>
+      <button class="a-nav" onclick="location.href='../index.html'">Beranda</button>
+      <button class="a-nav" onclick="location.href='../handphone.html'">Handphone</button>
       <button class="a-nav">Chipset</button>
-      <button class="a-nav" onclick="window.location.href='about.html'">About</button>
+      <button class="a-nav" onclick="location.href='../about.html'">Tentang</button>
     </div>
     <div class="right">
-      <!--todo:menggunakan div agar search dan button menyatu -->
-      <!-- <input type="text" placeholder="Search..." />
-      <button class="button-search">cari</button> -->
+      <input class="search-input" placeholder="Cari...">
     </div>
   </nav>
-  <!--* navbar-->
+
+  <main class="site-container">
   <div class="handphone2">
     <img src="vivo.png" alt="vivo-phone" class="picture">
     <h2 class="picture">Vivo X90 Pro+</h2>
@@ -79,9 +75,10 @@
         <p><strong>Kapasitas:</strong> 4700 mAh</p>
       </div>
     </div>
+    <footer>
+      <div class="site-container center muted">&copy; PONSEL.ID — Data referensi. Periksa toko resmi untuk harga dan ketersediaan.</div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 
-  </div>
-  <script src="main.js"></script>
-</body>
-
-</html>
+  </html>
